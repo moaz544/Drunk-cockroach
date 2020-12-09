@@ -1,0 +1,460 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mo;
+
+
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Rectangle;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.scene.layout.Pane;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
+
+public class JavaApplication2  extends JFrame {
+    JTextField input,output;
+      JButton print;
+            ArrayList<Integer> xx = new ArrayList<Integer>(); 
+
+
+        
+        //JTextField textfield= new JTextField();
+        
+        
+    public JavaApplication2(){
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    setTitle("java Graphics");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+       setSize(1000,800);
+      setLocation(200, 150);
+
+        setVisible(true);
+        
+            		
+
+    }
+    
+Color b[]={Color.BLACK,Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.RED,Color.RED,
+    Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.RED,Color.red,Color.BLUE,Color.RED,Color.GREEN,Color.RED,Color.BLACK,
+    Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.CYAN,Color.red,Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.lightGray,Color.yellow,
+    Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.RED,Color.cyan,Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.RED,Color.YELLOW,
+    Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.GREEN,Color.BLACK,Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.RED,Color.orange,
+    Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.RED,Color.BLACK,Color.BLUE,Color.GREEN,Color.GREEN,Color.gray,Color.BLACK,
+    Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.CYAN,Color.BLACK,Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.MAGENTA,Color.LIGHT_GRAY,
+    Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.CYAN,Color.BLACK,Color.YELLOW,Color.DARK_GRAY,Color.GREEN,Color.cyan,Color.green,
+    Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.pink,Color.BLACK,Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.RED,Color.CYAN,
+    Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.ORANGE,Color.MAGENTA,Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.RED,Color.gray,
+    Color.BLUE,Color.DARK_GRAY,Color.GREEN,Color.RED};
+         
+    public void paint ( Graphics g){
+        
+        
+        
+        int tw=100;
+          int n=5;     
+          int s=400/n;
+          int time=100;
+             
+
+
+     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+           g.setColor(Color.BLACK);
+
+    g.drawLine(100, 247, 430, 250);
+    g.drawOval(100, 169, 330, 150);
+    g.drawArc(90, 152, 120, 145, 270, 132);
+    g.drawOval(155,205,20, 20);
+    g.drawOval(155,262,20,20);
+    g.setColor(Color.BLACK);
+    g.drawOval(220, 265, 110, 30);
+    g.drawOval(220, 200, 110, 30);
+    g.drawArc(295, 165, 250, 100, 90, 40);
+    g.drawArc(235, 160, 250, 110, 90, 40);
+    g.drawArc(295, 307, 160, 20, 180,100);
+    g.drawArc(340, 300, 160, 20, 180, 100);
+    g.drawArc(70, 169,80,80, 180,90);
+    g.drawArc(70, 169,80,80, 150,50);
+    g.drawArc(90, 180,80, 80, 150, 80);
+    g.drawArc(70,247,80,80, 90, 120);
+    g.drawArc(85,247,60,60, 90, 110);
+    
+    
+                try {
+                    /////////////////////////////////////////////////////////
+                    Thread.sleep(tw);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(JavaApplication2.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    
+    
+    
+     
+           g.setColor(Color.white);
+
+    g.drawLine(100, 247, 430, 250);
+    g.drawOval(100, 169, 330, 150);
+    
+    g.drawArc(90, 152, 120, 145, 270, 132);
+    g.drawOval(155,205,20, 20);
+    g.drawOval(155,262,20,20);
+    
+    g.drawOval(220, 265, 110, 30);
+    g.drawOval(220, 200, 110, 30);
+    g.drawArc(295, 165, 250, 100, 90, 40);
+    g.drawArc(235, 160, 250, 110, 90, 40);
+    g.drawArc(295, 307, 160, 20, 180,100);
+    g.drawArc(340, 300, 160, 20, 180, 100);
+    g.drawArc(70, 169,80,80, 180,90);
+    g.drawArc(70, 169,80,80, 150,50);
+    g.drawArc(90, 180,80, 80, 150, 80);
+    g.drawArc(70,247,80,80, 90, 120);
+    g.drawArc(85,247,60,60, 90, 110);
+    
+               g.setColor(Color.BLACK);
+
+    
+    
+    
+    
+ 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+int f1=(int) s/5;
+int f3=(int) s/4;
+int f2= (int)s/10;
+int c=0;
+
+
+
+
+for(int i=1;i<=n;i++){
+    
+for(int j=1;j<=n;j++){
+    
+g.drawRect(i*s+s,j*s+s, s,s);
+xx.add(0);
+}
+ 
+}
+
+
+
+/////////////////////////////////////////////////////////////
+      int aa[]=new int[25];
+       
+        int t11=0;
+        int a[][]=new int[5][5];
+    //ArrayList<Integer> xx=new ArrayList<Integer>();
+////////////////////////////////////////////////////////
+ Random r=new Random();
+
+ 
+int c1[]=new int[20];
+
+
+//int a[][]=new int[n*n+1][n*n+1];
+int a1[]=new int[n*n+1];
+ArrayList<Integer[][]> ar = new ArrayList<Integer[][]>();
+ArrayList<Integer> ar2 = new ArrayList<Integer>();
+
+ int j=0;
+ int i=0;
+ int t=0;
+ int t1=0;
+ int t2=0;
+ 
+ int a5[][]=new int[6][6];
+for(int i1=1;i1<100000;i1++){
+    
+    
+    
+   
+   i=r.nextInt(n+1);
+          if(i==0){i=1;}
+          
+          
+         j=r.nextInt(n+1);
+          
+          if(j==0){j=1;}
+          
+     //a5[i][j]=1;
+        for(int y=0;y<a5.length;y++){
+                        for(int j1=0;j1<a5.length;j1++){
+
+        t11=a5[y][j1]+t11;
+        
+        if(t11==25){t11=100;
+        break;}
+        }        if(t11==100){
+        break;}
+
+        }
+        if(t11==100)  {break;}              
+                        
+        
+        
+    
+          
+          
+          
+          
+          
+          
+   
+/*
+a[i]=1;
+   a1[j]=1;
+   for (int o=0;o<55;o++){
+   t1=t1+a[o];
+   t2=t2+a[o];
+   }
+   
+   
+   if(t1==3){break;}
+*/
+   
+
+        
+           /*
+                      if(i>j){
+                          if(!(xx.contains(i+j+900))){
+
+                          xx.add(i+j+900);}
+                      t++;
+                      }
+                 if(i<j){
+                     if(!(xx.contains(i+j+100))){
+                     xx.add(i+j+100);
+                     t++;}
+                 }
+                 if(i==j){
+                     if(!(xx.contains(i+j+5000))){
+                     xx.add(i+j+5000);
+                     t++;}
+                 }
+          
+          if(xx.size()==9){
+                     
+                     break;}  
+               
+             
+                 */
+                       
+             if(i1!=1 ){
+
+ 
+              
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+         if( ((c1[0]-1==i)&&(c1[1]-1==j))
+              ||((c1[0]==i)&&(c1[1]-1==j))
+              ||((c1[0]+1==i)&&(c1[1]-1==j))             
+              ||((c1[0]+1==i)&&(c1[1]==j))
+              ||((c1[0]+1==i)&&(c1[1]+1==j))
+              ||((c1[0]==i)&&(c1[1]+1==j))
+              ||((c1[0]-1==i)&&(c1[1]+1==j))
+              ||((c1[0]-1==i)&&(c1[1]==j))
+                    )
+   {
+       
+       
+
+       
+       
+   
+           
+       
+ c1[0]=i;
+ c1[1]=j;
+    
+            
+                     
+              
+//c++;
+             
+        
+              
+              //2.3.5.
+              
+g.setColor(b[c]);
+g.fillRect(i*s+s,j*s+s, s,s);
+g.setColor(Color.WHITE);
+
+//g.setColor(b[c+1]);
+
+g.drawOval(i*s+s+f2+s/f2-f2,j*s+s, s/2,s-f2);
+//i*s+s+f2
+g.drawOval(i*s+s+f2+s/f2,j*s+s+2*f2, s/2-s*f2/f3,s-s*f2/f3);
+g.drawOval(i*s+s+f2+s/f2+2*f2,j*s+s+2*f2, s/2-s*f2/f3,s-s*f2/f3);
+
+
+g.drawLine(i*s+s+f2+s/f2+5*f2/3,j*s+s,i*s+s+f2+s/f2+5*f2/3,(s-s*f2/f3)+(j*s+s+s/4+f2-f3/6));
+
+
+g.drawOval(i*s+s+f2+s/f2+f2/3,j*s+s+f2/2, s/2-s*f2/f3+f2/f3,s/2-s*f2/f3);
+g.drawOval(i*s+s+f2+s/f2+2*f2+f2/3,j*s+s+f2/2, s/2-s*f2/f3,s/2-s*f2/f3);
+
+g.drawLine(i*s+s+f2+s/f2-2*f2,j*s+s+(s/2)-f2, i*s+s+f2+s/f2-f2/2,j*s+s+f1);
+
+
+g.drawLine(i*s+s+f2+s/f2-2*f2,j*s+s+s/2+f1+f2/2,i*s+s+f2+s/f2-f2,j*s+s+s/2+f2);  
+
+
+g.drawLine(i*s+s+f2+s/f2-2*f2+s/2+f2/2,j*s+s+f1-f2/2,i*s+s+f2+s/f2-2*f2+s/2+2*f2,j*s+s+s/2-f2);
+g.drawLine(i*s+s+f2+s/f2-2*f2+s/2+f2,j*s+s+s/2+f2,i*s+s+f2+s/f2-2*f2+s/2+2*f2,j*s+s+s/2+2*f1-f2);
+
+ try {
+                  Thread.sleep(time);
+              } catch (InterruptedException ex) {
+                  Logger.getLogger(JavaApplication2.class.getName()).log(Level.SEVERE, null, ex);
+              }          
+
+   g.setColor(b[c]);
+             
+  g.fillRect(i*s+s,j*s+s, s,s);
+   g.setColor(b[0]);
+
+  g.drawRect(i*s+s,j*s+s, s,s);
+
+   c++;
+if(c==b.length-1){
+c=0;
+
+}
+    
+   
+   
+   }
+
+            
+ /////////////////////////////////////////////////////////////////////////////////////////////             
+if(i1==1){
+ 
+ c1[0]=i;
+ c1[1]=j;
+ 
+   
+c++;
+             
+        
+              
+              //2.3.5.
+              
+g.setColor(b[c]);
+g.fillRect(i*s+s,j*s+s, s,s);
+g.setColor(b[c]);
+g.setColor(Color.WHITE);
+
+//g.setColor(b[c+1]);
+
+g.drawOval(i*s+s+f2+s/f2-f2,j*s+s, s/2,s-f2);
+//i*s+s+f2
+g.drawOval(i*s+s+f2+s/f2,j*s+s+2*f2, s/2-s*f2/f3,s-s*f2/f3);
+g.drawOval(i*s+s+f2+s/f2+2*f2,j*s+s+2*f2, s/2-s*f2/f3,s-s*f2/f3);
+
+
+g.drawLine(i*s+s+f2+s/f2+5*f2/3,j*s+s,i*s+s+f2+s/f2+5*f2/3,(s-s*f2/f3)+(j*s+s+s/4+f2-f3/6));
+
+
+g.drawOval(i*s+s+f2+s/f2+f2/3,j*s+s+f2/2, s/2-s*f2/f3+f2/f3,s/2-s*f2/f3);
+g.drawOval(i*s+s+f2+s/f2+2*f2+f2/3,j*s+s+f2/2, s/2-s*f2/f3,s/2-s*f2/f3);
+
+g.drawLine(i*s+s+f2+s/f2-2*f2,j*s+s+(s/2)-f2, i*s+s+f2+s/f2-f2/2,j*s+s+f1);
+
+
+g.drawLine(i*s+s+f2+s/f2-2*f2,j*s+s+s/2+f1+f2/2,i*s+s+f2+s/f2-f2,j*s+s+s/2+f2);  
+
+
+g.drawLine(i*s+s+f2+s/f2-2*f2+s/2+f2/2,j*s+s+f1-f2/2,i*s+s+f2+s/f2-2*f2+s/2+2*f2,j*s+s+s/2-f2);
+g.drawLine(i*s+s+f2+s/f2-2*f2+s/2+f2,j*s+s+s/2+f2,i*s+s+f2+s/f2-2*f2+s/2+2*f2,j*s+s+s/2+2*f1-f2);
+
+ try {
+                  Thread.sleep(1000);
+              } catch (InterruptedException ex) {
+                  Logger.getLogger(JavaApplication2.class.getName()).log(Level.SEVERE, null, ex);
+              }          
+
+   g.setColor(b[c]);
+             
+  g.fillRect(i*s+s,j*s+s, s,s);
+   g.setColor(b[0]);
+
+   g.drawRect(i*s+s,j*s+s, s,s);
+
+   c++;
+if(c==b.length-1){
+c=0;
+
+}}
+             
+      }
+    
+    }} 
+            
+   //     }
+    
+    
+          
+    
+    /*
+  public void SimpleJButton(){    
+		JFrame f=new JFrame("Button Example");            
+		JButton b=new JButton("Play", new ImageIcon("play.png"));    
+		b.setBounds(100,100,140, 40);    
+		f.add(b);    
+		f.setSize(300,400);    
+		f.setLayout(null);    
+		f.setVisible(true);    
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
+		}         */
+    
+    
+		
+    public static void main(String[] args) {
+
+   new JavaApplication2();
+       
+       
+ 
+
+        
+            }}
+
+  
+
+    
+
+
+
